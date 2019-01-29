@@ -13,7 +13,9 @@ class Movie extends Component {
     const { movieInfo: movie, onDelete } = this.props;
     return (
       <tr>
-        <td>{movie.title}</td>
+        <td>
+          <Link to="/movie:movie.id">{movie.title}</Link>
+        </td>
         <td>{movie.genre.name}</td>
         <td>{movie.numberInStock}</td>
         <td>{movie.dailyRentalRate}</td>
